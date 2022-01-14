@@ -7,6 +7,9 @@ from wtforms.fields.datetime import TimeField
 from wtforms.validators import DataRequired
 import csv
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get("KEY")
