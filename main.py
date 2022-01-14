@@ -16,7 +16,7 @@ Bootstrap(app)
 class CafeForm(FlaskForm):
     cafe = StringField('Cafe name', validators=[DataRequired()])
     location = StringField('Location URL', validators=[DataRequired()])
-    open_time = TimeField('Opening Time', validators=[DataRequired()])
+    open_time = TimeField('Opening time', validators=[DataRequired()])
     closing_time = TimeField('Closing Time', validators=[DataRequired()])
     coffee_rating = SelectField('Coffee Rating', choices = [("☕", "☕"), ("☕☕", "☕☕"), ("☕☕☕", "☕☕☕"), ("☕☕☕☕", "☕☕☕☕"), ("☕☕☕☕☕", "☕☕☕☕☕")], validators=[DataRequired()])
     wifi_rating = SelectField('Wifi Rating', choices=[("💪", "💪"), ("💪💪", "💪💪"), ("💪💪💪", "💪💪💪"), ("💪💪💪💪", "💪💪💪💪"), ("💪💪💪💪💪", "💪💪💪💪💪")], validators=[DataRequired()])  
